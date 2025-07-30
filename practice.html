@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>remove duplivate from an array</title>
+  </head>
+  <body>
+    <script>
+      //Remove duplicate from an array.
+      let numbers = [1, 2, 3, 4, 3, 5, 1];
+      let uniqueNo = [];
+      for (i = 0; i < numbers.length; i++) {
+        if (!uniqueNo.includes(numbers[i])) {
+          uniqueNo.push(numbers[i]);
+        }
+      }
+      console.log(uniqueNo); // output:[1,2,3,4,5]
+    </script>
+  </body>
+</html>
